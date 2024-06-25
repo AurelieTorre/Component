@@ -5,10 +5,25 @@ devront provenir du composant parent App.jsx.
 Dans le composant App, appelle plusieurs fois ton composant Contact, avec des valeurs de props différentes, 
 afin de tester que tout fonctionne correctement. */
 
-<section className="profilePic">
-    <div className="roundedPic">
-        <img src="#" alt="photo de profil" />
-    </div>
-    <div className="connexionMark"></div>
-    <div className="profileName"></div>
-</section>
+import React  from "react";
+
+const Contact = props => {
+
+    return (
+        <section className="profilePic">
+            <div className="roundedPic">
+                <img src="#" alt="photo de profil" />
+            </div>
+            <div className="connexionMark"></div>
+            <div className="profileName">
+                <h1>{props.title}</h1>
+            </div>
+            <div className="example">
+                <p>{props.content}</p>
+            </div>
+        </section>
+    );
+
+};
+
+export default Contact;

@@ -1,11 +1,10 @@
 import './App.css';
+import Contact from './components/Contact'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <h1>Hello, world!</h1>
-      </header>
+      <Contact title="Hello World" content="This is a simple React component." />
     </div>
   );
 }
