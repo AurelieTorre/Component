@@ -20,13 +20,14 @@ function App() {
   return (
     <div className="App">
       <div>
-        <input
-          type="text"
+        <select
           name="status"
           value={contactInfo.status}
           onChange={handleChange}
-          placeholder="Status"
-        />
+         >
+          <option value="online">En ligne</option>
+          <option value="offline">Hors ligne</option>
+        </select> 
         <input
           type="text"
           name="name"
@@ -34,13 +35,15 @@ function App() {
           onChange={handleChange}
           placeholder="Name"
         />
-        <input
-          type="text"
+        <select
           name="imageId"
           value={contactInfo.imageId}
           onChange={handleChange}
-          placeholder="Image ID"
-        />
+        >
+          <option value="phNgjbJ/photo1">Photo 1</option>
+          <option value="bbzSQ7G/photo2">Photo 2</option>
+          <option value="MZhFKKg/photo3">Photo 3</option>
+        </select>
       </div>
       <Contact 
         status={contactInfo.status} 

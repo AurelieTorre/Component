@@ -22,10 +22,10 @@
 }
 
 .connexionMark {
-    border: 3px solid white;
+    border: 5px solid white;
     border-radius: 50%;
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
     position: absolute;
     top: 20lvh;
     left: 53lvw;
