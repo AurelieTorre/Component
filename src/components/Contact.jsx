@@ -7,16 +7,6 @@ afin de tester que tout fonctionne correctement. */
 
 import React  from "react";
 import './Contact.css';
-import photo1 from "../img/photo1.jpg";
-
-// function getImageUri(props) {
-//     return (
-//         '../img/photo' +
-//         props.imageId +
-//         '.jpg'
-//     );
-// };
-
 
 const Contact = (props) => {
 
@@ -24,7 +14,7 @@ const Contact = (props) => {
         <section className="profilePic">
             <div className="roundedPic">
                 <img className="profileImage"
-                src={photo1}
+                src={'https://i.ibb.co/' + props.imageId + '.jpg'}
                 />
                 <div className={`connexionMark ${props.status === 'online' ? 'connected' : 'disconnected'}`}>
                     <p>{props.status}</p>
