@@ -4,3 +4,11 @@ devront provenir du composant parent App.jsx.
 -> Tu trouveras des informations sur l'affichage conditionnel en pièce jointe aussi (qui utilise un opérateur ternaire).
 Dans le composant App, appelle plusieurs fois ton composant Contact, avec des valeurs de props différentes, 
 afin de tester que tout fonctionne correctement. */
+
+<section className="profilePic">
+    <div className="roundedPic">
+        <img src="#" alt="photo de profil" />
+    </div>
+    <div className="connexionMark"></div>
+    <div className="profileName"></div>
+</section>
