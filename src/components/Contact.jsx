@@ -6,24 +6,36 @@ Dans le composant App, appelle plusieurs fois ton composant Contact, avec des va
 afin de tester que tout fonctionne correctement. */
 
 import React  from "react";
+import './Contact.css';
+import photo1 from "../img/photo1.jpg";
 
-const Contact = props => {
+// function getImageUri(props) {
+//     return (
+//         '../img/photo' +
+//         props.imageId +
+//         '.jpg'
+//     );
+// };
+
+
+const Contact = (props) => {
 
     return (
         <section className="profilePic">
             <div className="roundedPic">
-                <img src="#" alt="photo de profil" />
+                <img className="profileImage"
+                src={photo1}
+                />
+                <div className={`connexionMark ${props.status === 'online' ? 'connected' : 'disconnected'}`}>
+                    <p>{props.status}</p>
+                </div>
             </div>
-            <div className="connexionMark"></div>
             <div className="profileName">
-                <h1>{props.title}</h1>
+                <h1>{props.name}</h1>
             </div>
-            <div className="example">
-                <p>{props.content}</p>
-            </div>
+
         </section>
     );
-
 };
 
 export default Contact;

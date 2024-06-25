@@ -4,7 +4,7 @@ import Contact from './components/Contact'
 function App() {
   return (
     <div className="App">
-      <Contact title="Hello World" content="This is a simple React component." />
+      <Contact status="online" name="Julia" imageId="1" />
     </div>
   );
 }

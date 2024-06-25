@@ -1,0 +1,42 @@
+.profilePic {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profileImage {
+    margin-top: 3lvh;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    position: relative;
+}
+
+.profileName {
+    font-size: 2rem; 
+}
+
+.profileName > h1 {
+    margin: 1lvh;
+}
+
+.connexionMark {
+    border: 3px solid white;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 20lvh;
+    left: 53lvw;
+    color: transparent;
+}
+
+.connected {
+    background-color: lime;
+}
+
+.disconnected {
+    background-color: crimson;
+}
+
